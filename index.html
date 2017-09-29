@@ -1,0 +1,132 @@
+<!--Written and designed by Kyle Leighton-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Robert Leighton</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:100,300,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id="container">
+<!--Header-->
+	<div id="header">
+		<h1><a href="index.html" style="color: black; text-decoration: none; font-weight: 100;">ROBERT LEIGHTON</h1></a>
+	</div>
+
+
+<!--Background-->
+<div id="body">
+	<style>
+   		body {background-color: white;}
+   		#canvas {background-color: white;}
+   	</style>
+
+<!--Nav bar-->
+		<nav>
+			<ul class="nav">
+				<a href="index.html" style="text-decoration: none;"><li>Home</li></a>
+				<a href="nyer.html" style="text-decoration: none;"><li>The New Yorker</li></a>
+				<a href="https://puzzability.github.io" target="_blank" style="text-decoration: none;"><li>Puzzability</li></a>
+				<a href="publications.html" style="text-decoration: none;"><li>Publications</li></a>
+				<a href="about.html" style="text-decoration: none;"><li>About</li></a>
+				<a href="#" style="text-decoration: none;"><li>Award</li></a>
+				<a href="#" style="text-decoration: none;"><li>Contact</li></a>
+			</ul>
+		</nav>
+
+
+
+<!--Group of signature and both subcaptions-->
+<div class="signature-slogan">
+  <img src="images/signature.png"/>
+  <h1 style="font-weight: 100">ROBERT LEIGHTON</h1><br/> 
+	<h3 style="font-weight: 100">CARTOONIST, PUZZLE-WRITER &amp; <br/>ILLUSTRATOR</h3>
+</div>
+
+
+<!--Slideshow-->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="images/index-slideshow/raising.png">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/index-slideshow/dumbasspresident.png">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/index-slideshow/stonehenge.png">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/index-slideshow/manuscript.png">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/index-slideshow/ocd.png">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/index-slideshow/rightform.png">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/index-slideshow/thinkoutside.png">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/index-slideshow/tree.png">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!--
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+-->
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+</div>
+
+<footer>
+	<p>Contents &copy; 2017 Robert Leighton. All rights reserved.</p>
+</footer>
+
+
+
+
+</body>
+</html>
